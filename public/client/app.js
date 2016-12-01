@@ -39,4 +39,3 @@ window.Shortly = Backbone.View.extend({
   }
 });
 
-//Test comment
