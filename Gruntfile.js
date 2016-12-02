@@ -56,6 +56,7 @@ module.exports = function(grunt) {
         files: [
           'public/client/**/*.js',
           'public/lib/**/*.js',
+          '*.js'
         ],
         tasks: [
           'build'
@@ -95,7 +96,7 @@ module.exports = function(grunt) {
     'mochaTest'
   ]);
 
-  grunt.registerTask('build', ['eslint', 'test', 'concat:dist', 'uglify', 'cssmin'
+  grunt.registerTask('build', ['eslint', 'concat:dist', 'uglify', 'cssmin'
   ]);
 
   grunt.registerTask('upload', function(n) {
